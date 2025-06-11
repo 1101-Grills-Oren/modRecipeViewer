@@ -1,6 +1,5 @@
 //import { Octokit } from "@octokit/core";
-Octokit=0
-import("https://esm.sh/@octokit/core").then((response)=>(Octokit=response;));
+import("https://esm.sh/@octokit/core").then((response)=>{Octokit=response.Octokit;});
 // Octokit.js
 // https://github.com/octokit/core.js#readme
 const octokit = new Octokit({
