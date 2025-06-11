@@ -2,7 +2,7 @@
 // https://github.com/octokit/core.js#readme
 const octokit = new Octokit({
   auth: 'YOUR-TOKEN'
-})
+});
 get=function(owner,repo,path){
 // Octokit.js
 // https://github.com/octokit/core.js#readme
@@ -16,7 +16,7 @@ return await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
     'X-GitHub-Api-Version': '2022-11-28'
   }
 });
-}  
+};
 set=function(owner,repo,path,content){
   
   await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
@@ -32,5 +32,6 @@ set=function(owner,repo,path,content){
   headers: {
     'X-GitHub-Api-Version': '2022-11-28'
   }
-})
-}
+});
+  return;
+};
